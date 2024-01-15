@@ -1,0 +1,5 @@
+from .stage_01_data_ingestion import DataIngestionPipeline
+from .stage_02_data_validation import DataValidationPipeline
+from .stage_03_data_transformation import DataTransformationPipeline
+from .stage_04_training_model import TrainingModelPipeline
+from .stage_05_model_evaluation import ModelEvaluationPipeline

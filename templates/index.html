@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Float Form</title>
+  </head>
+  <body>
+    <form action="/inference" method="post">
+      <label for="field1">Distance from home:</label>
+      <input type="number" id="field1" name="distance_from_home" step=0.01 required />
+      <br />
+      <label for="field2">Distance from last transaction:</label>
+      <input type="number" id="field2" name="distance_from_last_transaction" step=0.01 required />
+      <br />
+      <label for="field3">Ratio to median purchase price</label>
+      <input type="number" id="field3" name="ratio_to_median_purchase_price" step=0.01 required />
+      <br />
+      <label for="field4">Repeat Retailer</label>
+      <input type="number" id="field4" name="repeat_retailer" step=0.01 required />
+      <br />
+      <label for="field5">Used Chip</label>
+      <input type="number" id="field5" name="used_chip" step=0.01 required />
+      <br />
+      <label for="field6">Used Pin Number</label>
+      <input type="number" id="field6" name="used_pin_number" step=0.01 required />
+      <br />
+      <label for="field7">Online Order</label>
+      <input type="number" id="field7" name="online_order" step=0.01 required />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+beartype
+omegaconf
+pandas
+scikit-learn
+polars
+mlflow
+python-dotenv
+-e .
