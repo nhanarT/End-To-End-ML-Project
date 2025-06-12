@@ -162,7 +162,3 @@ cython_debug/
 artifacts/
 logs/
 notebooks/
-config/
-!src/ml_project/config
-params.yaml
-schema.yaml

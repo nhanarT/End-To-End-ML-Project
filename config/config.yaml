@@ -1,0 +1,27 @@
+artifact_root: artifacts
+
+data_ingestion:
+  stage_dir: artifacts/data_ingestion
+  source: /home/nhan/work/dload-linux/credit_card_fraud.zip
+  dest: artifacts/data_ingestion/credit_card_fraud.zip
+  unzip_dir: artifacts/data_ingestion/credit_card_fraud
+
+data_validation:
+  stage_dir: artifacts/data_validation
+  data_dir: artifacts/data_ingestion/credit_card_fraud/
+  validation_result_file: artifacts/data_validation/validation_result.txt
+
+data_transformation:
+  stage_dir: artifacts/data_transformation
+  data_dir: artifacts/data_ingestion/credit_card_fraud/
+
+training_model:
+  stage_dir: artifacts/training_model
+  data_dir: artifacts/data_transformation
+  output_dir: artifacts/training_model/models
+
+model_evaluation:
+  stage_dir: artifacts/model_evaluation
+  data_dir: artifacts/data_transformation
+  model_dir: artifacts/training_model/models
+  metric_file_name: artifacts/model_evaluation/metrics.json
